@@ -1,0 +1,15 @@
+{% extends 'core/base.html' %}
+
+{% block title %}Add Projects{% endblock %}
+
+{% block content %}
+<h2>Add Projects</h2>
+
+<form enctype="multipart/form-data" action ="" method="POST">
+	{% csrf_token %}
+	<table>
+	{{project.as_table}}
+	</table>
+	<input type="submit" value="Send">
+</form>
+{% endblock %}

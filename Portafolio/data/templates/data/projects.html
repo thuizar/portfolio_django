@@ -1,0 +1,17 @@
+{% extends 'core/base.html' %}
+
+{% block title %}List of Projects {% endblock %}
+
+{% block content %}
+
+{% for project in projects %}
+<hr>
+<br>
+<h2 id="title">{{project.title}}</h2>
+<img src="{{project.image.url}}" alt="LOGO">
+<p>
+    {{project.description}}
+</p>
+<a href="{{project.link}}">{{project.link}}</a>
+{% endfor %}
+{% endblock %}

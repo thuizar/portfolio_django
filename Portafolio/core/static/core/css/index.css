@@ -1,0 +1,14 @@
+body{
+    background: burlywood;
+}
+
+img{
+    height: 100px;
+    width: 100px;
+}
+
+.border-radius{
+    background: gray;
+    border-radius: 1em;
+    display: inline-block;
+}
